@@ -55,12 +55,12 @@ const About = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
-                        className="flex-1 grid grid-cols-2 gap-6 w-full"
+                        className="flex-1 grid grid-cols-2 gap-4 sm:gap-6 w-full"
                     >
                         {stats.map((stat, index) => (
-                            <div key={index} className="glass-card p-8 flex flex-col items-center justify-center text-center group hover:-translate-y-2 transition-transform duration-300">
-                                <span className="text-4xl md:text-5xl font-bold text-[var(--primary-color)] mb-2">{stat.value}</span>
-                                <span className="text-sm font-medium uppercase tracking-wider text-[var(--text-muted)] group-hover:text-[var(--text-color)] transition-colors">{stat.label}</span>
+                            <div key={index} className="glass-card p-6 sm:p-8 flex flex-col items-center justify-center text-center group hover:-translate-y-2 transition-transform duration-300">
+                                <span className="text-3xl sm:text-5xl font-bold text-[var(--primary-color)] mb-2">{stat.value}</span>
+                                <span className="text-[10px] sm:text-sm font-medium uppercase tracking-wider text-[var(--text-muted)] group-hover:text-[var(--text-color)] transition-colors">{stat.label}</span>
                             </div>
                         ))}
                     </motion.div>

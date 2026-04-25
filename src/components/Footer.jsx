@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <footer id="contact" className="py-24 bg-[var(--bg-color)] border-t border-[var(--border-color)]">
             <div className="container mx-auto px-8 md:px-12">
-                <div className="glass-card p-12 relative overflow-hidden">
+                <div className="glass-card p-8 sm:p-12 relative overflow-hidden">
                     {/* Background Glow */}
                     <div className="absolute top-0 right-0 w-64 h-64 bg-[var(--primary-color)] opacity-5 rounded-full blur-3xl"></div>
                     

@@ -25,15 +25,15 @@ const Hero = () => {
                             Portfolio 2026
                         </span>
                         
-                        <h1 className="text-5xl md:text-8xl font-bold mb-6 leading-tight tracking-tight text-[var(--text-color)]">
+                        <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold mb-6 leading-tight tracking-tight text-[var(--text-color)]">
                             <BlurText
                                 text="Jauzana"
                                 delay={100}
                                 animateBy="words"
                                 direction="top"
-                                className="block"
+                                className="inline-block"
                             />
-                            <span className="text-gradient">Zahira.</span>
+                            <span className="text-gradient block sm:inline">Zahira.</span>
                         </h1>
                         
                         <motion.p 

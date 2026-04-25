@@ -30,13 +30,13 @@ const BlogModal = ({ post, onClose }) => {
                     </button>
 
                     {/* Content Section */}
-                    <div className="p-10 overflow-y-auto custom-scrollbar">
-                        <div className="mb-8">
+                    <div className="p-6 sm:p-10 overflow-y-auto custom-scrollbar">
+                        <div className="mb-6 sm:mb-8">
                             <span className="inline-block px-3 py-1 mb-4 text-[10px] font-bold text-white bg-[var(--primary-color)] rounded-md uppercase tracking-widest shadow-sm">
                                 {post.tag}
                             </span>
                             <span className="text-[var(--text-muted)] font-bold text-xs tracking-widest uppercase ml-4">{post.date}</span>
-                            <h2 className="text-4xl font-bold text-[var(--text-color)] leading-tight mt-4">{post.title}</h2>
+                            <h2 className="text-2xl sm:text-4xl font-bold text-[var(--text-color)] leading-tight mt-4">{post.title}</h2>
                         </div>
 
                         <div className="prose prose-invert max-w-none">

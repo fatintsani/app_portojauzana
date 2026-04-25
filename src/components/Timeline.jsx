@@ -6,12 +6,12 @@ const TimelineItem = ({ title, company, date, description, index }) => (
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6, delay: index * 0.1 }}
-        className="relative pl-12 pb-12 border-l-2 border-[var(--border-color)] last:pb-0"
+        className="relative pl-8 sm:pl-12 pb-12 border-l-2 border-[var(--border-color)] last:pb-0"
     >
         {/* Dot */}
         <div className="absolute left-[-9px] top-0 w-4 h-4 bg-[var(--primary-color)] rounded-full border-4 border-[var(--bg-color)]"></div>
         
-        <div className="glass-card p-8 hover:-translate-y-1 transition-transform duration-300">
+        <div className="glass-card p-6 sm:p-8 hover:-translate-y-1 transition-transform duration-300">
             <span className="inline-block px-3 py-1 mb-4 text-[10px] font-bold text-white bg-[var(--primary-color)] rounded-full shadow-sm tracking-wider uppercase">
                 {date}
             </span>

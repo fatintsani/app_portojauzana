@@ -15,7 +15,7 @@ export const AccessibilityProvider = ({ children }) => {
 
     const [fontFamily, setFontFamily] = useState(() => {
         const saved = localStorage.getItem('fontFamily');
-        return saved || 'Poppins';
+        return saved || 'Outfit';
     });
 
     const [highContrast, setHighContrast] = useState(() => {

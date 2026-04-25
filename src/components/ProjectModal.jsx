@@ -30,7 +30,7 @@ const ProjectModal = ({ project, onClose }) => {
                     </button>
 
                     {/* Image Section */}
-                    <div className="w-full md:w-1/2 h-72 md:h-auto bg-gray-100 relative overflow-hidden">
+                    <div className="w-full md:w-1/2 h-60 sm:h-72 md:h-auto bg-gray-100 relative overflow-hidden">
                         <img
                             src={project.img}
                             alt={project.title}
@@ -44,10 +44,10 @@ const ProjectModal = ({ project, onClose }) => {
                     </div>
 
                     {/* Content Section */}
-                    <div className="w-full md:w-1/2 p-10 overflow-y-auto custom-scrollbar">
-                        <div className="mb-8">
+                    <div className="w-full md:w-1/2 p-6 sm:p-10 overflow-y-auto custom-scrollbar">
+                        <div className="mb-6 sm:mb-8">
                             <span className="text-[var(--primary-color)] font-bold text-sm tracking-widest uppercase mb-2 block">{project.date}</span>
-                            <h2 className="text-4xl font-bold text-[var(--text-color)] leading-tight">{project.title}</h2>
+                            <h2 className="text-2xl sm:text-4xl font-bold text-[var(--text-color)] leading-tight">{project.title}</h2>
                         </div>
 
                         <div className="space-y-8">
