@@ -1,0 +1,22 @@
+Smart Safe Security System with Sensor & IoT Monitoring
+
+In this project, I developed a smart security system for a safe (brankas) using multiple sensors and IoT-based monitoring. The system is designed to detect suspicious activities such as unauthorized access, forced door opening, or unusual vibrations using sensors like PIR (motion sensor) and ultrasonic sensor. These sensors continuously monitor the environment and send real-time data to the microcontroller.
+
+The collected sensor data is then processed to determine whether the condition is safe or dangerous. When a threat is detected, the system automatically activates an alarm (buzzer) as a warning signal. At the same time, the system sends notifications to a smartphone via a Bluetooth module (HC-05), allowing users to monitor the security status remotely through an Android application.
+
+Additionally, the system displays real-time status on an LCD with I2C interface, providing local monitoring directly from the hardware. The integration between sensors, microcontroller, communication module, and mobile application creates a complete embedded system capable of delivering real-time alerts and monitoring.
+
+This project demonstrates the implementation of embedded systems, IoT communication, and real-time security monitoring, combining both hardware and software components to build an intelligent safety solution.
+
+Key Features:
+Motion & intrusion detection (PIR, ultrasonic, vibration)
+Real-time alert system (buzzer alarm)
+Bluetooth communication (HC-05)
+Android-based monitoring system
+LCD display for local status monitoring
+Skills Demonstrated:
+Embedded Systems Development (Arduino/Microcontroller)
+Sensor Integration & Data Processing
+IoT Communication (Bluetooth)
+Mobile App Integration
+System Design & Troubleshooting

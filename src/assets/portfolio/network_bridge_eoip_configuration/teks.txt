@@ -1,0 +1,16 @@
+Network Bridge & EoIP Configuration (MikroTik Lab)
+
+In this lab activity, I configured network bridging and EoIP (Ethernet over IP) using MikroTik routers to simulate both local and remote network connections.
+
+In the bridge configuration, I connected multiple routers (Router A, B11, and B22) using different Ethernet interfaces (ether1, ether2, ether3) and combined them into a single network segment using a bridge interface. This allowed all connected devices to be in the same subnet (192.168.xxx.yyy/24) and communicate directly as if they were on the same physical network. The configuration demonstrated how bridging works at Layer 2 to forward traffic between interfaces without routing.
+
+In the EoIP configuration, I simulated a connection between two different locations (Meja 100 and Meja 200) over an IP network (10.10.xxx.0/16) via the internet. I created an EoIP tunnel between Router A and Router B using a specific Tunnel ID, allowing Ethernet frames to be encapsulated and transmitted across the network. By combining EoIP with bridging, both remote networks were successfully joined into a single Layer 2 network (192.168.xxx.x), enabling devices on different locations to communicate as if they were in the same LAN.
+
+This lab was performed directly on physical MikroTik routers in a networking laboratory environment, where I configured interfaces, assigned IP addresses, created bridges, and verified connectivity between devices.
+
+Skills Demonstrated:
+MikroTik Router Configuration
+Network Bridging (Layer 2)
+EoIP Tunnel Configuration
+IP Addressing & Subnetting
+Network Simulation & Troubleshooting

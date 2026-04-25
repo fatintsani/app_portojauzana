@@ -1,0 +1,20 @@
+Telyu Snack Track (TST) – Food Ordering System
+
+Description:
+Telyu Snack Track (TST) is a digital platform designed to simplify food ordering within Telkom University. The system allows users to order food efficiently from campus canteens using flexible service options.
+
+Key Features:
+
+Pick-up & Delivery system
+Digital payment (GoPay, OVO, DANA, Bank Transfer, Cash)
+Menu display with price and description
+Order summary and confirmation
+
+Technical Implementation:
+
+Language: C++
+Concepts Used:
+Array (store menu & delivery data)
+Looping (for, do-while)
+Branching (if-else, switch-case)
+Structure (menu & order data)

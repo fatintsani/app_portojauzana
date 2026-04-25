@@ -1,0 +1,5 @@
+Network Packet Analysis & ARP Spoofing (Network Security Lab)
+
+In this project, I performed network traffic analysis and simulated cybersecurity attacks using tools such as Wireshark and Bettercap on macOS. The process began with configuring Wireshark, including enabling promiscuous mode to capture all network packets in real-time using Berkeley Packet Filter (BPF). I analyzed network protocols such as ICMP (via ping) and HTTP, where I observed that sensitive data like usernames and passwords can be easily intercepted because HTTP does not use encryption.
+
+I then conducted a comparison with HTTPS, which uses SSL/TLS encryption, making the transmitted data unreadable even when packet sniffing is performed. To further explore network security, I simulated a Man-In-The-Middle (MITM) attack using ARP Spoofing, where the attacker device manipulated the victim’s ARP table, allowing all traffic to be intercepted and analyzed. From the captured packets, login

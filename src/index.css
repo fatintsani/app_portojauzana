@@ -1,0 +1,88 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@400;500;600;700&family=Open+Sans:wght@400;600;700&display=swap');
+
+@theme {
+  --color-primary: var(--primary-color);
+  --color-accent: var(--accent-color);
+  --font-sans: var(--font-main, 'Poppins'), 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+:root {
+  --font-main: 'Poppins';
+  --primary-color: #800000;
+  --accent-color: #FFD700;
+  --bg-color: #F8F9FA;
+  --text-color: #333333;
+  --card-bg: #FFFFFF;
+}
+
+.dark {
+  --bg-color: #121212;
+  --text-color: #f3f4f6;
+  --card-bg: #1e1e1e;
+  /* Keep primary maroon but maybe slightly lighter if needed */
+  --primary-color: #a00000; 
+}
+
+.high-contrast {
+  --primary-color: #000000 !important;
+  --accent-color: #ffff00 !important;
+  --bg-color: #ffffff !important;
+  --text-color: #000000 !important;
+  --card-bg: #ffffff !important;
+}
+
+.high-contrast.dark {
+  --bg-color: #000000 !important;
+  --text-color: #ffffff !important;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Ensure all sections respond to theme */
+section {
+  transition: background-color 0.3s ease;
+}
+
+.section-title {
+  @apply text-4xl font-bold mb-8 relative inline-block;
+  color: var(--primary-color);
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background-color: var(--accent-color);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: color-mix(in srgb, var(--primary-color), black 20%);
+}

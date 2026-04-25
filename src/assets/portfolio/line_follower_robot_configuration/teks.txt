@@ -1,0 +1,14 @@
+Line Follower Robot Configuration (Arduino IDE Lab)
+
+In this lab activity, I configured and programmed a line follower robot using Arduino IDE by integrating multiple sensors, motor drivers, and control logic to enable the robot to follow a line autonomously.
+
+In the hardware setup, I connected 8 photodiode sensors to analog pins (A0–A7) to detect the line position, and used a motor driver to control two DC motors (left and right). Additional components such as LEDs and switches were also configured for indicators and input control.
+
+In the software implementation, I developed a control system that reads all sensor values using a looping method and converts them into digital conditions (black or white) based on a defined threshold. The system then calculates the number of active sensors and determines the robot’s movement using conditional logic.
+
+Skills Demonstrated:
+Embedded Systems Programming (Arduino)
+Sensor Integration (Photodiode Array)
+Motor Control using PWM
+Real-time Decision Making (if-else logic)
+Robotics & Automation Basics

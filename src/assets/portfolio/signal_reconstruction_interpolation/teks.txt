@@ -1,0 +1,9 @@
+Signal Reconstruction & Interpolation (Signal Processing Lab)
+
+In this lab activity, I performed signal sampling and reconstruction using different interpolation methods to understand how digital signals can approximate continuous signals.
+
+In the sampling process, I generated a sine wave signal and converted it into discrete data points using Python. This step represents how real-world analog signals are captured in digital systems.
+
+In the reconstruction process, I implemented three interpolation methods: Zero-Order Hold (ZOH), First-Order Hold (FOH / Linear), and Sinc (Ideal) Interpolation. ZOH produced a step-like signal by holding values constant between samples, while FOH connected sample points with straight lines for smoother results. The sinc interpolation method provided the most accurate reconstruction, closely matching the original continuous signal.
+
+Additionally, I analyzed important signal processing concepts such as aliasing, quantization, and sampling

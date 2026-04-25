@@ -1,0 +1,13 @@
+Network Cable Crimping & Testing (RJ45)
+
+In this activity, I performed both network cable assembly (crimping) and cable testing using an RJ45 cable tester. The process started by arranging the internal wires of a UTP cable according to the T568B standard, ensuring the correct color sequence before inserting them into the RJ45 connector. After properly aligning and cutting the wires, I used a crimping tool to secure the connector to the cable, creating a functional Ethernet cable.
+
+Once the cable was assembled, I conducted testing using a cable tester device (RJ45 + RJ11 tester). The tester verified the continuity and correctness of each pin (1–8) by lighting up LEDs in sequence on both the master and remote units. Based on the results shown in the image, the LEDs lit up in order, indicating that the cable was correctly wired with no cross, short, or open connections. This confirms that the crimping process was successful and the cable is ready for network use.
+
+This project demonstrates practical skills in network cabling, troubleshooting, and hardware-level networking, which are essential for building and maintaining reliable network infrastructure.
+
+Skills Demonstrated:
+RJ45 Cable Crimping (T568A/B Standard)
+Cable Testing & Troubleshooting
+Understanding of Network Cabling (UTP)
+Hardware Networking Basics

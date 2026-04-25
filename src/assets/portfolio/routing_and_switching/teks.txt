@@ -1,0 +1,14 @@
+CCNA: Switching, Routing, and Wireless Essentials – Cisco Networking Academy
+
+I successfully completed the CCNA: Switching, Routing, and Wireless Essentials course offered through the Cisco Networking Academy program at Telkom University. This certification validates my understanding of fundamental networking concepts, including how to configure and manage switching, routing, and wireless networks in real-world environments.
+
+Throughout this course, I gained hands-on experience in configuring network devices, understanding IP addressing, VLANs, routing protocols, and wireless connectivity, as well as troubleshooting network issues. I also learned how data flows across networks and how to ensure efficient and secure communication between devices.
+
+This achievement demonstrates my ability to apply core networking principles, work with Cisco-based systems, and build a strong foundation for advanced networking and cybersecurity roles.
+
+Skills Demonstrated:
+Network Configuration (Switching & Routing)
+IP Addressing & Subnetting
+VLAN & Basic Routing Concepts
+Wireless Network Fundamentals
+Network Troubleshooting
