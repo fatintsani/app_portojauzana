@@ -1,8 +1,9 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
-import Education from './components/Education';
-import Experience from './components/Experience';
+import ProjectSection from './components/ProjectSection';
+import Timeline from './components/Timeline';
+import BlogSection from './components/BlogSection';
 import Footer from './components/Footer';
 import AccessibilitySettings from './components/AccessibilitySettings';
 import { AccessibilityProvider } from './context/AccessibilityContext';
@@ -10,12 +11,15 @@ import { AccessibilityProvider } from './context/AccessibilityContext';
 function App() {
   return (
     <AccessibilityProvider>
-      <div className="bg-[#F8F9FA] dark:bg-[#121212] min-h-screen transition-colors duration-300">
+      <div className="bg-[var(--bg-color)] min-h-screen">
         <Navbar />
-        <Hero />
-        <About />
-        <Education />
-        <Experience />
+        <main>
+          <Hero />
+          <About />
+          <ProjectSection />
+          <Timeline />
+          <BlogSection />
+        </main>
         <Footer />
         <AccessibilitySettings />
       </div>

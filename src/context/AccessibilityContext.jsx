@@ -56,9 +56,12 @@ export const AccessibilityProvider = ({ children }) => {
         }
     }, [highContrast]);
 
+    const toggleDarkMode = () => setIsDarkMode(!isDarkMode);
+
     return (
         <AccessibilityContext.Provider value={{
             isDarkMode, setIsDarkMode,
+            toggleDarkMode,
             fontSize, setFontSize,
             fontFamily, setFontFamily,
             highContrast, setHighContrast

@@ -10,61 +10,61 @@ const ProjectModal = ({ project, onClose }) => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
-                className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm"
+                className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-md"
                 onClick={onClose}
             >
                 <motion.div
                     initial={{ scale: 0.9, opacity: 0, y: 20 }}
                     animate={{ scale: 1, opacity: 1, y: 0 }}
                     exit={{ scale: 0.9, opacity: 0, y: 20 }}
-                    transition={{ type: "spring", damping: 25, stiffness: 300 }}
-                    className="bg-white rounded-2xl overflow-hidden max-w-4xl w-full max-h-[90vh] shadow-2xl relative flex flex-col md:flex-row"
+                    transition={{ type: "spring", damping: 30, stiffness: 400 }}
+                    className="bg-[var(--bg-color)] rounded-[32px] overflow-hidden max-w-5xl w-full max-h-[90vh] shadow-2xl relative flex flex-col md:flex-row border border-[var(--border-color)]"
                     onClick={(e) => e.stopPropagation()}
                 >
                     {/* Close Button */}
                     <button
                         onClick={onClose}
-                        className="absolute top-4 right-4 z-20 bg-black/20 hover:bg-black/40 text-white p-2 rounded-full backdrop-blur-md transition-colors"
+                        className="absolute top-6 right-6 z-20 glass-card text-[var(--text-color)] p-2 rounded-xl hover:bg-[var(--primary-color)] hover:text-white transition-all duration-300"
                     >
                         <IoClose size={24} />
                     </button>
 
                     {/* Image Section */}
-                    <div className="w-full md:w-1/2 h-64 md:h-auto bg-gray-100 relative">
+                    <div className="w-full md:w-1/2 h-72 md:h-auto bg-gray-100 relative overflow-hidden">
                         <img
                             src={project.img}
                             alt={project.title}
-                            className="w-full h-full object-cover"
+                            className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                         />
-                        <div className="absolute top-4 left-4">
-                            <span className="bg-[#800000] text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-lg">
+                        <div className="absolute bottom-6 left-6">
+                            <span className="bg-[var(--primary-color)] text-white text-[10px] font-bold px-4 py-2 rounded-full uppercase tracking-[0.2em] shadow-lg">
                                 {project.category}
                             </span>
                         </div>
                     </div>
 
                     {/* Content Section */}
-                    <div className="w-full md:w-1/2 p-8 overflow-y-auto bg-white custom-scrollbar">
-                        <div className="mb-6">
-                            <h2 className="text-3xl font-bold text-[#333] mb-2 leading-tight">{project.title}</h2>
-                            <p className="text-[#800000] font-semibold">{project.date}</p>
+                    <div className="w-full md:w-1/2 p-10 overflow-y-auto custom-scrollbar">
+                        <div className="mb-8">
+                            <span className="text-[var(--primary-color)] font-bold text-sm tracking-widest uppercase mb-2 block">{project.date}</span>
+                            <h2 className="text-4xl font-bold text-[var(--text-color)] leading-tight">{project.title}</h2>
                         </div>
 
-                        <div className="space-y-6">
+                        <div className="space-y-8">
                             <div>
-                                <h4 className="text-sm font-bold text-gray-400 uppercase tracking-widest mb-2">Description</h4>
-                                <p className="text-gray-600 leading-relaxed whitespace-pre-line">
+                                <h4 className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-[0.2em] mb-4">The Challenge</h4>
+                                <p className="text-[var(--text-muted)] leading-relaxed text-lg">
                                     {project.fullDescription || project.description}
                                 </p>
                             </div>
 
                             {project.features && (
                                 <div>
-                                    <h4 className="text-sm font-bold text-gray-400 uppercase tracking-widest mb-2">Key Features</h4>
-                                    <ul className="grid grid-cols-1 gap-2">
+                                    <h4 className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-[0.2em] mb-4">Key Features</h4>
+                                    <ul className="grid grid-cols-1 gap-3">
                                         {project.features.map((feature, i) => (
-                                            <li key={i} className="flex items-center text-gray-600">
-                                                <span className="w-2 h-2 bg-[#FFD700] rounded-full mr-3"></span>
+                                            <li key={i} className="flex items-center text-[var(--text-muted)]">
+                                                <span className="w-2 h-2 bg-[var(--primary-color)] rounded-full mr-4"></span>
                                                 {feature}
                                             </li>
                                         ))}
@@ -73,10 +73,10 @@ const ProjectModal = ({ project, onClose }) => {
                             )}
 
                             <div>
-                                <h4 className="text-sm font-bold text-gray-400 uppercase tracking-widest mb-3">Skills & Tech</h4>
+                                <h4 className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-[0.2em] mb-4">Technologies</h4>
                                 <div className="flex flex-wrap gap-2">
                                     {project.tags.map(tag => (
-                                        <span key={tag} className="px-3 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded-md border border-gray-200">
+                                        <span key={tag} className="px-3 py-1.5 bg-[var(--primary-color)] text-white text-[10px] font-bold rounded-lg shadow-sm uppercase tracking-wider">
                                             {tag}
                                         </span>
                                     ))}
@@ -84,14 +84,14 @@ const ProjectModal = ({ project, onClose }) => {
                             </div>
 
                             {project.url && (
-                                <div className="pt-4">
+                                <div className="pt-6">
                                     <a
                                         href={project.url}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="inline-block bg-[#800000] text-white px-6 py-3 rounded-lg font-bold hover:bg-[#600000] transition-colors shadow-lg"
+                                        className="inline-block bg-[var(--primary-color)] text-white px-8 py-4 rounded-2xl font-bold hover:shadow-xl hover:-translate-y-1 transition-all"
                                     >
-                                        View Live Project
+                                        Live Project Preview
                                     </a>
                                 </div>
                             )}

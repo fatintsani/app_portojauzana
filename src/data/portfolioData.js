@@ -26,7 +26,7 @@ export const portfolioData = [
         images: [smartSafeImg1, smartSafeImg2],
         tags: ["Arduino", "IoT", "Sensors", "Bluetooth", "Android"],
         features: ["Motion & intrusion detection", "Real-time alert system", "Bluetooth communication", "Android monitoring"],
-        date: "2024"
+        date: "2026"
     },
     {
         id: "telyu-snack",
@@ -38,7 +38,7 @@ export const portfolioData = [
         images: [tstImg1, tstImg2],
         tags: ["C++", "Data Structures", "System Design"],
         features: ["Pick-up & Delivery system", "Digital payment options", "Menu display", "Order summary"],
-        date: "2023"
+        date: "2026"
     },
     {
         id: "robot-config",
@@ -49,7 +49,7 @@ export const portfolioData = [
         img: robotImg1,
         images: [robotImg1],
         tags: ["Robotics", "Arduino", "Sensors", "PWM"],
-        date: "2024"
+        date: "2026"
     },
     {
         id: "network-bridge",
@@ -60,7 +60,7 @@ export const portfolioData = [
         img: bridgeImg1,
         images: [bridgeImg1, bridgeImg2],
         tags: ["MikroTik", "Networking", "EoIP", "Bridging"],
-        date: "2024"
+        date: "2026"
     },
     {
         id: "network-cable",
@@ -71,7 +71,7 @@ export const portfolioData = [
         img: cableImg1,
         images: [cableImg1],
         tags: ["Networking", "Hardware", "Cabling"],
-        date: "2023"
+        date: "2026"
     },
     {
         id: "packet-analysis",
@@ -82,7 +82,7 @@ export const portfolioData = [
         img: packetImg1,
         images: [packetImg1],
         tags: ["Cybersecurity", "Wireshark", "Bettercap", "MITM"],
-        date: "2024"
+        date: "2026"
     },
     {
         id: "signal-reconstruction",
@@ -93,7 +93,7 @@ export const portfolioData = [
         img: signalImg1,
         images: [signalImg1],
         tags: ["Python", "Signal Processing", "Mathematics"],
-        date: "2024"
+        date: "2026"
     },
     {
         id: "routing-switching",
@@ -104,7 +104,7 @@ export const portfolioData = [
         img: ccnaImg1,
         images: [ccnaImg1],
         tags: ["CCNA", "Cisco", "Networking"],
-        date: "2024"
+        date: "2026"
     },
     {
         id: "huawei-ict",
@@ -115,7 +115,7 @@ export const portfolioData = [
         img: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=2070&auto=format&fit=crop",
         images: ["https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=2070&auto=format&fit=crop"],
         tags: ["Huawei", "ICT", "Networking"],
-        date: "2024",
+        date: "2026",
         url: "https://www.credly.com/badges/403978da-359b-4adb-90bf-d9c589581b43/public_url"
     },
     {
@@ -127,7 +127,7 @@ export const portfolioData = [
         img: ukmBogorImg1,
         images: [ukmBogorImg1, ukmBogorImg2],
         tags: ["Event Planning", "Creative", "Teamwork"],
-        date: "2023-2024"
+        date: "2026"
     },
     {
         id: "aisec",
@@ -138,6 +138,6 @@ export const portfolioData = [
         img: aiesecImg1,
         images: [aiesecImg1],
         tags: ["Leadership", "Global Mindset", "Communication"],
-        date: "2023"
+        date: "2024"
     }
 ];
