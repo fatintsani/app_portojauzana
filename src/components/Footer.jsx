@@ -1,4 +1,4 @@
-import { FaInstagram, FaEnvelope, FaWhatsapp, FaLinkedin, FaMapMarkerAlt, FaGithub } from 'react-icons/fa';
+import { FaInstagram, FaEnvelope, FaWhatsapp, FaLinkedin, FaMapMarkerAlt } from 'react-icons/fa';
 
 const Footer = () => {
     return (
@@ -33,8 +33,7 @@ const Footer = () => {
                             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                                 {[
                                     { icon: <FaInstagram />, label: "Instagram", href: "https://instagram.com/ocgie_" },
-                                    { icon: <FaLinkedin />, label: "LinkedIn", href: "#" },
-                                    { icon: <FaGithub />, label: "GitHub", href: "#" },
+                                    { icon: <FaLinkedin />, label: "LinkedIn", href: "https://www.linkedin.com/in/jauzana-zahira" },
                                     { icon: <FaWhatsapp />, label: "WhatsApp", href: "https://wa.me/62881027445498" },
                                 ].map((social, i) => (
                                     <a 
@@ -53,15 +52,7 @@ const Footer = () => {
                             <div className="mt-12 pt-8 border-t border-[var(--border-color)] flex flex-col lg:flex-row justify-between items-center gap-6 text-xs md:text-sm text-[var(--text-muted)]">
                                 <div className="flex flex-wrap items-center justify-center lg:justify-start gap-x-4 gap-y-2">
                                     <p className="whitespace-nowrap">&copy; {new Date().getFullYear()} Jauzana Zahira.</p>
-                                    <span className="hidden sm:inline opacity-30">|</span>
-                                    <a 
-                                        href="https://www.instagram.com/fatin_tsani" 
-                                        target="_blank" 
-                                        rel="noreferrer" 
-                                        className="font-medium hover:text-[var(--primary-color)] transition-colors flex items-center gap-2 whitespace-nowrap"
-                                    >
-                                        Build app with <span className="text-[var(--text-color)] font-bold">@fatin_tsani</span>
-                                    </a>
+
                                 </div>
                                 <div className="flex gap-6 whitespace-nowrap">
                                     <a href="#home" className="hover:text-[var(--text-color)]">Home</a>
