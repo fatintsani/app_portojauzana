@@ -32,7 +32,7 @@ const Timeline = () => {
         },
         {
             title: "Science Major",
-            company: "SMAN 3 Kota Sukabumi",
+            company: "SMAN 3 Malang",
             date: "2021 - 2024",
             description: "Participated in various science and technology competitions."
         }
